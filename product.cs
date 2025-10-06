@@ -7,4 +7,10 @@ class Product
     public int Amount;
 
     public string Productowner;
+   public Product(string? name, string? description, int amount)
+    {
+        Name = name;
+        Description = description;
+        Amount = amount;
+    }
 }
