@@ -18,7 +18,14 @@ namespace App
             MyItems = new List<Item>();
             MyTrades = new List<Trade>();
         }
+
+        public void AddItem(Item item)
+        {
+            MyItems.Add(item);
+        }
+
+        // Display all items of user
+        
     }
 }
-
   
