@@ -18,7 +18,37 @@ namespace App
             MyItems = new List<Item>();
             MyTrades = new List<Trade>();
         }
+
+        // Add item to user
+        public void AddItem(Item item)
+        {
+            MyItems.Add(item);
+        }
+
+        // Display all items of user
+        public void ShowItems()
+        {
+            if (MyItems.Count == 0)
+            {
+                System.Console.WriteLine("No items available.");
+                return;
+            }
+
+            foreach (var item in MyItems)
+            {
+                item.ShowItem();
+                System.Console.WriteLine("------------------");
+            }
+        }
+
+        // Check login credentials
+        public bool Login(string username, string password)
+        {
+            return Username == username && Password == password;
+        }
     }
 }
+
+    
 
   
