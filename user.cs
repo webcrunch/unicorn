@@ -25,7 +25,13 @@ namespace App
         }
 
         // Display all items of user
-        
+        // Check login credentials
+        public bool Login(string username, string password)
+        {
+            return Username == username && Password == password;
+        }
     }
 }
+    
+
   
