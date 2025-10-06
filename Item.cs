@@ -6,7 +6,9 @@ class Item
   public string? Description;
   public int Amount;
 
-  public Item(string? name, string? description, int amount)
+  public string owner;
+
+  public Item(string? name, string? description, int amount,string owner)
   {
     Name = name;
     Description = description;
